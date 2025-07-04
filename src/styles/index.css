@@ -1,0 +1,217 @@
+/**
+*! style rules for SectionOne
+**/
+
+
+.SectionOne__left--btn{
+    align-self: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.SectionOne__left--text{
+    font-family: var(--font-2);
+    font-size: var(--h6);
+    color: var(--color-white-75);
+    max-width: 520px;
+}
+
+/**
+*! Style rules for SectionTwo
+**/
+
+.SectionTwo{
+    display: grid;
+    gap:30px;
+    padding: 40px;
+    justify-content: center;
+}
+.SectionTwo--content--text{
+    font-family: var(--font-2);
+    font-size: var(--body);
+    color: var(--color-dark-75);
+}
+
+.SectionTwo--btn{
+    justify-self: center;
+    align-self: center;
+}
+.SectionTwo--logo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.SectionTwo--logo img{
+   justify-self: center;
+   align-self: center;
+}
+
+
+/**
+*! Style rules for SectionThree
+**/
+
+.SectionThree__right--text{
+    font-family: var(--font-2);
+    font-size: var(--body);
+    color: var(--color-dark-75);
+}
+
+.SectionThree__right--btn{
+    justify-self: start;
+    align-self: start;
+}
+
+.SectionThree__right{
+    gap: 25px;
+    padding-left: 40px;
+}
+
+.SectionThree{
+    margin-top: 30px;
+    justify-content: center;
+}
+
+/**
+*! Style rules for Sectionfour
+**/
+
+.SectionFour__left--text{
+    font-family: var(--font-2);
+    font-size: var(--body);
+    color: var(--color-dark-75);
+}
+
+.SectionFour__left{
+    padding-right: 50px;
+}
+
+.SectionFour__left--btn{
+    justify-self: start;
+    align-self: start;
+}
+
+.SectionFour{
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
+/**
+*! Style rules for Sectionfive
+**/
+.SectionFive__content--text{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+    color: var(--color-dark-100);
+}
+
+.SectionFive__cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+[class^="SectionFive__cards--"]{
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-1);
+    border-radius: 5px;
+    padding: 30px;
+    gap: 15px;
+}
+
+[class^="SectionFive__cards--"] .name{
+    font-family: var(--font-1);
+    font-size: var(--h5);
+    font-weight: bold;
+}
+
+[class^="SectionFive__cards--"] .position{
+    font-family: var(--font-2);
+    color: var(--color-dark-75);
+    text-transform: uppercase;
+}
+.SectionFive{
+    display: grid;
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    justify-content: center;
+}
+
+.SectionFive__btn{
+    justify-self: center;
+    align-self: center;
+}
+
+
+/**
+*! Style rules for Homepage footer
+**/
+
+.footer{
+    background-color: var(--color-green-100);
+    justify-content: center;
+}
+
+.Homepage__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Homepage__footer--logo{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 10px;
+    padding: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Homepage__footer--text{
+    padding: 30px;
+    margin: 10px;
+    color: var(--color-white-100);
+}
+
+@media (max-width: 768px){
+    .SectionFive__cards{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .SectionOne__right, .SectionFour__right {
+        order: 0;
+    }
+    .SectionOne__left, .SectionFour__left{
+        order: 1;
+    }
+    .common-title{
+        font-size: var(--h4);
+    }
+    .SectionTwo--logo{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .SectionFive__cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .SectionFour__left, .SectionThree__right{
+        padding: 0px 50px 0px 50px;
+    }
+}
+
+@media (max-width: 568px){
+    .SectionFive__cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+}

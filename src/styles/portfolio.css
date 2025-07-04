@@ -1,0 +1,179 @@
+.portfolio__SectionOne--content--text{
+        font-family: var(--font-2);
+        font-size: var(--body);
+        color: var(--color-dark-75);
+        max-width: 410px;
+        margin: auto;
+}
+
+.portfolio__SectionOne--content{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.portfolio__SectionOne--images{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        cursor: pointer;
+}
+
+.portfolio__SectionOne--btn{
+        justify-self: center;
+        align-self: center;
+}
+
+.portfolio__SectionOne{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+}
+
+.portfolio__SectionOne--images:hover{
+        box-shadow: 4px var(--color-dark-75);
+}
+
+@media (max-width: 768px){
+        .portfolio__SectionOne--images{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+        }
+}
+
+/**
+*?styles for Services.html
+**/
+
+.Services__cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        font-family: var(--font-2);
+        text-align: center;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+}
+
+[class^="Services__cards--"]{
+        box-shadow: var(--shadow-1);
+        display: grid;
+        gap: 15px;
+        padding: 40px;
+        border-radius: 5px;
+}
+
+.amount{
+        font-size: var(--h1);
+        font-weight: bolder;
+}
+
+.time{
+        color: var(--color-dark-75);
+}
+
+.price{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-self: center;
+}
+
+.details{
+        color: var(--color-dark-75);
+        font: var(--font-2);
+}
+
+.features{
+        display: grid;
+        gap: 20px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: var(--font-2);
+}
+
+.Services__btn{
+        justify-self: center;
+        align-self: center;
+}
+
+@media (max-width: 768px){
+        .Services__cards{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+        }
+}
+
+
+/**
+*! Styles for contact page.
+**/
+
+.contact__SectionOne{
+        padding-top: 20px;
+        padding-bottom: 20px;
+}
+
+.contact__sectionOne--text{
+        font-family: var(--font-2);
+        font-size: var(--body);
+        color: var(--color-dark-75);
+        max-width: 400px;
+        margin: auto;
+}
+
+.form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: var(--font-2);
+}
+
+.contact__SectionTwo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+        margin-top: 30px;
+}
+
+#name, #email{
+        width: auto;
+        height: 30px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,0.05);
+}
+#message{
+        height: 70px;
+        width: auto;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,0.05);
+}
+
+.contact__page{
+        margin-bottom: 30px;
+}
+
+@media (max-width: 768px){
+        .contact__SectionTwo{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+        }
+        .contact__SectionTwo--map{
+                order: 0;
+        }
+        .contact__SectionTwo--form{
+                order: 1;
+        }
+}
+
+
+[class^="navbar__menu--"]:hover{
+        transform: scale(1.1);
+}
